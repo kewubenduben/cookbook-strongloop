@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
         :server_repl_password => 'replpass'
       }
     }
-
+    chef.log_level = :debug
     chef.run_list = [
         "recipe[strongloop::default]"
     ]

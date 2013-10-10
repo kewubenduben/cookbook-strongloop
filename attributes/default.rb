@@ -1,21 +1,21 @@
-default['nodejs']['version'] = '1.0.0-1'
-default['nodejs']['dir'] = '/usr/local'
-default['nodejs']['make_threads'] = node['cpu'] ? node['cpu']['total'].to_i : 2
+default['strongloop']['version'] = '1.0.0-1'
+default['strongloop']['dir'] = '/usr/local'
+default['strongloop']['make_threads'] = node['cpu'] ? node['cpu']['total'].to_i : 2
 
 case node['platform_family']
   when "debian"
     arch = node['kernel']['machine'] =~ /x86_64/ ? "amd64" : "i386"
-    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_#{default['nodejs']['version']}_#{arch}.deb"
-    default['strongloop']['binary']  = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_#{default['nodejs']['version']}_#{arch}.tgz"
+    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_#{default['strongloop']['version']}_#{arch}.deb"
+    default['strongloop']['binary']  = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_#{default['strongloop']['version']}_#{arch}.tgz"
   when "rhel"
     arch = node['kernel']['machine'] =~ /x86_64/ ? "x86_64" : "i686"
-    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['nodejs']['version']}.el6.#{arch}.rpm"
-    default['strongloop']['binary']  = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['nodejs']['version']}.el6.#{arch}.tgz"
+    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['strongloop']['version']}.el6.#{arch}.rpm"
+    default['strongloop']['binary']  = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['strongloop']['version']}.el6.#{arch}.tgz"
   when "mac_os_x"
-    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['nodejs']['version']}.pkg"
+    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['strongloop']['version']}.pkg"
   when "windows"
     arch = node['kernel']['machine'] =~ /x86_64/ ? "x64" : "x86"
-    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['nodejs']['version']}-#{arch}.msi"
+    default['strongloop']['package'] = "http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite-#{default['strongloop']['version']}-#{arch}.msi"
 end
 
 

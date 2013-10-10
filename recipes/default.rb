@@ -7,4 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "strongloop::install_from_binary"
+include_recipe "strongloop::install_from_package"
