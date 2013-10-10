@@ -20,16 +20,16 @@ end
 
 
 default['strongloop']['checksums'] = {
-  "strongloop-suite_1.0.0-1_amd64.deb" => "f80442c588564bf21a50b2cdb6b862a0134426d1",
-  "strongloop-suite_1.0.0-1_amd64.tgz" => "9fb6ce3e780ec3d167b975d1a8ac32b989b347a4",
-  "strongloop-suite-1.0.0-1.el6.i686.rpm" => "5562cd790ae11ec04473cf4a2ea7d081cfa2f1d7",
-  "strongloop-suite-1.0.0-1.el6.i686.tgz" => "25c719e9252fd99caeb692524623e68fc6dfbc22",
-  "strongloop-suite-1.0.0-1.el6.src.rpm" => "194ee90957a43aaa74aa8e042982b17cd412bb0c",
-  "strongloop-suite-1.0.0-1.el6.x86_64.rpm" => "d0e5c1de258c7dacacdbd56c7eb98f16be822324",
-  "strongloop-suite-1.0.0-1.el6.x86_64.tgz" => "93bb02c2eb26a0c6e747b7a3c2842f8e697776d4",
-  "strongloop-suite_1.0.0-1_i386.deb" => "3ca5e4ba5f2d1bbe23a2b70ebdc2391012dc4e86",
-  "strongloop-suite-1.0.0-1.pkg" => "b189992f20876881f0bb85e2fc80a8c4853608b5",
-  "strongloop-suite-1.0.0-1-x64.msi" => "c039a819c40ebb5515d83f6f1dd7785ca55d8b99",
-  "strongloop-suite-1.0.0-1-x86.msi" => "ed97db1a1f7e0c91a5157802cf98a8559a0b2872"
+  "strongloop-suite_1.0.0-1_amd64.deb" => "274acab7c7c515de3fccb1cadbffa7b40d2ed35386ddc299508646dde92facb1",
+  "strongloop-suite_1.0.0-1_amd64.tgz" => "80a6a36ec400e7f7fd2787ad2080a1712132da40cc40237b06d986869a15ec5c",
+  "strongloop-suite-1.0.0-1.el6.i686.rpm" => "d53a50668b57961af5f90daa932c55905e0c6caa9dc954c29f274d307eda8e77",
+  "strongloop-suite-1.0.0-1.el6.i686.tgz" => "e0975443d4e966e117eba60ad56a17f543ae8b75b97bb7bdcb0535f94dab4052",
+  "strongloop-suite-1.0.0-1.el6.src.rpm" => "6bb113d863955b2842e8600358e9f0699f449e2d65ac313e8ac50497ebfdd83a",
+  "strongloop-suite-1.0.0-1.el6.x86_64.rpm" => "e04da015dc4fb8cb7a7e64febae3b564c0fcaf3cdc4513b3f94151b1082ad853",
+  "strongloop-suite-1.0.0-1.el6.x86_64.tgz" => "2d9ef2cc07a7ee522898941f6919d557c21848f3f84a45675c59a44a9a4b2612",
+  "strongloop-suite_1.0.0-1_i386.deb" => "3315025297be9e38e93533aaf7f7ae1ba67d5e9b047fbf2862e4c714f4faea6c",
+  "strongloop-suite-1.0.0-1.pkg" => "64615fc0c6279c249bc3cc3e654a13ac541bb51f083a43562986c3c3c6725606",
+  "strongloop-suite-1.0.0-1-x64.msi" => "52de046945fb6278b7d7de3e7d6a51847992b35aa9569161c8cbbe419821599b",
+  "strongloop-suite-1.0.0-1-x86.msi" => "9d2eee712fbd227549ded37f1a208718cb81fcbfd3fdbf84b1ea43bbb3bbe2cb"
 }
 
