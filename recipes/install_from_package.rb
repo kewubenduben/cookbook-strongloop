@@ -24,4 +24,5 @@ remote_file "#{Chef::Config[:file_cache_path]}/#{::File.basename(node['strongloo
   checksum node["strongloop"]["checksums"][File.basename(node['strongloop']['package'])]
   mode 00644
   notifies :run, "bash[install-node]", :immediately
+  not_if "#{not_if_command}"
 end
